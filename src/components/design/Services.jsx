@@ -26,8 +26,8 @@ export const PhotoChatMessage = () => {
 
 export const VideoChatMessage = () => {
   return (
-    <div className="absolute -top-1 left-[3.125rem] w-full max-w-[14rem] pt-2.5 pr-2.5 pb-7 pl-5 bg-n-6 rounded-t-xl rounded-br-xl font-code text-base md:max-w-[17.5rem]">
-      Downloaded From Internet!🥴🙈😅
+    <div className="absolute -top-1 left-[0.125rem] w-full max-w-[8.5rem] pt-2.5 pr-2.5 pb-7 pl-5 bg-n-6 rounded-t-xl rounded-bl-xl font-code text-xs md:max-w-[17.5rem]">
+      All Downloaded From Internet!🥴🙈😅
       <div className="absolute left-5 -bottom-[0.2rem] flex items-center justify-center w-[2.25rem] h-[2.25rem] scale-[2.5] rounded-[0.75rem]">
         <img
           src={ali}
@@ -40,7 +40,7 @@ export const VideoChatMessage = () => {
         just now
       </p>
       <ChatBubbleWing
-        className="absolute right-full bottom-0 -scale-x-100"
+        className="absolute left-full bottom-0"
         pathClassName="fill-n-6"
       />
     </div>

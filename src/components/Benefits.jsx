@@ -4,6 +4,7 @@ import Section from "./Section";
 import Arrow from "../assets/svg/Arrow";
 import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
+import card1 from "../assets/benefits/card-1.svg";
 
 import { roboEdit } from "../assets";
 import gsap from "gsap";
@@ -38,7 +39,7 @@ const Benefits = () => {
     <Section id="features" >
       <div className="h-dvh w-screen z-50" id="clip">
         <div className="mask-clip-path about-image z-50">
-          <video autoPlay controls className='absolute origin-center top-0 left-0 object-fill w-screen h-full ' src={roboEdit}></video>
+          <video autoPlay controls className='absolute origin-center top-0 left-0 object-fill w-screen h-screen ' src={roboEdit}></video>
         </div>
       </div>
       <div className="container top-[6.5rem] relative z-2">
@@ -50,11 +51,9 @@ const Benefits = () => {
         <div className="flex flex-wrap gap-10 mb-10">
           {benefits.map((item) => (
             <div
-              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
-              style={{
-                backgroundImage: `url(${item.backgroundUrl})`,
-              }}
+              className={`block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem] `}
               key={item.id}
+              style={{ backgroundImage: `url(${card1})` }}
             >
               <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
                 <h5 className="h5 mb-5">{item.title}</h5>
