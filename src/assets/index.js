@@ -39,10 +39,10 @@ import slack from "./collaboration/slack.png";
 
 import ayat from "./services/ayat.png";
 import aliPic from "./services/aliPic.png";
-import robo from "./services/robo.mp4";
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
 import service3 from "./services/service-3.png";
+import co from "./services/co.jpg";
 
 import lines from "./pricing/lines.svg";
 import stars from "./pricing/stars.svg";
@@ -72,6 +72,7 @@ import benefitIcon2 from "./benefits/icon-2.svg";
 import benefitIcon3 from "./benefits/icon-3.svg";
 import benefitIcon4 from "./benefits/icon-4.svg";
 import benefitImage2 from "./benefits/image-2.png";
+import roboEdit from "./benefits/roboEdit.mp4";
 
 import discordBlack from "./socials/discord.svg";
 import facebook from "./socials/facebook.svg";
@@ -83,7 +84,8 @@ export {
   ayat,
   ali,
   aliPic,
-  robo,
+  roboEdit,
+  co,
   brainwave,
   check,
   check2,

@@ -1,13 +1,22 @@
 import React from "react";
 import Section from "./Section";
 import { socials } from "../constants";
+import { curve } from "../assets";
 
 const Footer = () => {
   return (
     <Section crosses className="!px-0 !py-10">
       <div className="container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">
         <p className="caption text-n-4 lg:block">
-          © {new Date().getFullYear()}. All rights reserved.
+          © {new Date().getFullYear()}. All rights reserved by "KMASPURIYA BRAND 🥴". <br />Developed by <span className="inline-block relative bg-gradient-to-r from-yellow-300 to-teal-400 text-transparent bg-clip-text">
+          BABAR HASSAN </span>
+          <img
+                src={curve}
+                className="absolute left-[8.8rem] lg:left-[10rem] w-[27%] lg:w-[10.4%] xl:-mt-2"
+                width={624}
+                height={28}
+                alt="Curve"
+              />
         </p>
 
         <ul className="flex gap-5 flex-wrap">

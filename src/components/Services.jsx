@@ -1,6 +1,6 @@
 import Section from "./Section";
 import Heading from "./Heading";
-import { aliPic,service1, service2, service3, check, robo } from "../assets";
+import { aliPic, co, service1, service2, service3, check } from "../assets";
 import { brainwaveServices, brainwaveServicesIcons } from "../constants";
 import {
   PhotoChatMessage,
@@ -17,7 +17,7 @@ const Services = () => {
       <div className="container">
         <Heading
           title="Generative AI made for creators."
-          text="Brainwave unlocks the potential of AI-powered applications"
+          text="Let's unlock the potential of AI-powered applications"
         />
 
         <div className="relative">
@@ -35,7 +35,7 @@ const Services = () => {
             <div className="relative z-1 max-w-[17rem] ml-auto">
               <h4 className="h4 mb-4">Smartest AI</h4>
               <p className="body-2 mb-[3rem] text-n-3">
-                Brainwave unlocks the potential of AI-powered applications
+                Let's unlock the potential of AI-powered applications
               </p>
               <ul className="body-2">
                 {brainwaveServices.map((item, index) => (
@@ -68,8 +68,8 @@ const Services = () => {
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
                 <h4 className="h4 mb-4">Photo editing</h4>
                 <p className="body-2 mb-[3rem] text-n-3">
-                  Automatically enhance your photos using our AI app&apos;s
-                  photo editing feature. Try it now!
+                  Automatically enhance your photos using AI app&apos;s
+                  photo editing features.
                 </p>
               </div>
 
@@ -80,8 +80,8 @@ const Services = () => {
               <div className="py-12 px-4 xl:px-8">
                 <h4 className="h4 mb-4">Video generation</h4>
                 <p className="body-2 mb-[2rem] text-n-3">
-                  The world’s most powerful AI photo and video art generation
-                  engine. What will you create?
+                  The world’s most powerful photo and video art generation
+                  tools. What will you create?
                 </p>
 
                 <ul className="flex items-center justify-between">
@@ -109,9 +109,23 @@ const Services = () => {
               </div>
 
               <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
-              <video autoPlay loop controls className='object-contain translate-y-11 lg:translate-y-[4.7rem] ' src={robo}></video>
+                <img
+                  src={co}
+                  className="w-full h-full object-fill"
+                  width={520}
+                  height={400}
+                  alt="Scary robot"
+                />
+                {/* <img
+                  src={service3}
+                  className="w-full h-full object-cover"
+                  width={520}
+                  height={400}
+                  alt="Scary robot"
+                /> */}
+                {/* <video controls className='absolute top-0 left-0 object-cover w-full h-full ' src={robo}></video> */}
 
-                {/* <VideoChatMessage /> */}
+                <VideoChatMessage />
                 {/* <VideoBar /> */}
               </div>
             </div>

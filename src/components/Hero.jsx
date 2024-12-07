@@ -10,11 +10,12 @@ import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
 
 const Hero = () => {
+
   const parallaxRef = useRef(null);
 
   return (
     <Section
-      className="pt-[6rem] -mt-[5.25rem]"
+      className="pt-[6rem] -mt-[5.25rem] "
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
@@ -62,11 +63,13 @@ const Hero = () => {
             Get started
             </Button> */}
         </div>
+
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:hidden lg:mb-[6.25rem]">
             <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
               Unleash the power of New Era. Upgrade your productivity and Ability to explore the AI and its features
             </p>
         </div>
+
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
             <div className="relative bg-n-8 rounded-[1rem]">
